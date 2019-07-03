@@ -14,22 +14,70 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sisakuyume2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <view key="view" contentMode="scaleToFill" id="xa4-Xi-r8J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b62-xU-Jce">
-                                <rect key="frame" x="311" y="465" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9OC-6R-aRl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="fnX-kk-J2S">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7YE-Ej-DtX">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                                <color key="backgroundColor" red="0.76138874888399455" green="0.89819802716053032" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xd9-Yr-8oT">
+                                                <rect key="frame" x="0.0" y="200" width="414" height="200"/>
+                                                <color key="backgroundColor" red="1" green="0.92235509260199078" blue="0.70250872333795045" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ujq-ZL-wSe">
+                                                <rect key="frame" x="0.0" y="400" width="414" height="200"/>
+                                                <color key="backgroundColor" red="1" green="0.77449928279805214" blue="0.9169128092711506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNH-fQ-bQH">
+                                                <rect key="frame" x="0.0" y="600" width="414" height="200"/>
+                                                <color key="backgroundColor" red="0.75730977346448802" green="1" blue="0.69129617042602232" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zYP-DZ-RN2">
+                                                <rect key="frame" x="0.0" y="800" width="414" height="200"/>
+                                                <color key="backgroundColor" red="1" green="0.73477063513359597" blue="0.67994062443092906" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Dn-6J-ISr">
+                                                <rect key="frame" x="0.0" y="1000" width="414" height="150"/>
+                                                <color key="backgroundColor" red="0.50040173085865858" green="0.66641932242448987" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZJQ-56-o3y">
+                                                <rect key="frame" x="0.0" y="1150" width="414" height="50"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fnX-kk-J2S" firstAttribute="top" secondItem="9OC-6R-aRl" secondAttribute="top" id="HHx-ey-29U"/>
+                                    <constraint firstItem="fnX-kk-J2S" firstAttribute="width" secondItem="9OC-6R-aRl" secondAttribute="width" id="NTS-fi-F39"/>
+                                    <constraint firstAttribute="bottom" secondItem="fnX-kk-J2S" secondAttribute="bottom" id="QoZ-38-Ocw"/>
+                                    <constraint firstAttribute="trailing" secondItem="fnX-kk-J2S" secondAttribute="trailing" id="YgD-00-MID"/>
+                                    <constraint firstItem="fnX-kk-J2S" firstAttribute="leading" secondItem="9OC-6R-aRl" secondAttribute="leading" id="igG-EK-ujq"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9OC-6R-aRl" firstAttribute="trailing" secondItem="kGa-8R-E5I" secondAttribute="trailing" id="N15-1b-VBP"/>
+                            <constraint firstItem="9OC-6R-aRl" firstAttribute="bottom" secondItem="xa4-Xi-r8J" secondAttribute="bottom" id="O01-XG-rJn"/>
+                            <constraint firstItem="9OC-6R-aRl" firstAttribute="leading" secondItem="kGa-8R-E5I" secondAttribute="leading" id="QHu-ay-2IH"/>
+                            <constraint firstItem="9OC-6R-aRl" firstAttribute="top" secondItem="xa4-Xi-r8J" secondAttribute="top" id="iON-2B-W1P"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kGa-8R-E5I"/>
                     </view>
+                    <size key="freeformSize" width="414" height="1200"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="37.681159420289859" y="18.75"/>
         </scene>
     </scenes>
 </document>
