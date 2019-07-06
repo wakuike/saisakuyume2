@@ -14,6 +14,10 @@
 		1914E84D22C4FD8C00C98C16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1914E84B22C4FD8C00C98C16 /* LaunchScreen.storyboard */; };
 		1914E85822C4FD8C00C98C16 /* sisakuyume2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1914E85722C4FD8C00C98C16 /* sisakuyume2Tests.swift */; };
 		1914E86322C4FD8C00C98C16 /* sisakuyume2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1914E86222C4FD8C00C98C16 /* sisakuyume2UITests.swift */; };
+		BF65F82722D1240900437167 /* 写真ライブラリ.photoslibrary in Resources */ = {isa = PBXBuildFile; fileRef = BF65F82622D1240900437167 /* 写真ライブラリ.photoslibrary */; };
+		BF65F82922D124BA00437167 /* 猫.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF65F82822D124BA00437167 /* 猫.jpg */; };
+		BF65F82B22D124EB00437167 /* 猫.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF65F82A22D124EB00437167 /* 猫.jpg */; };
+		BF65F82D22D1339B00437167 /* buttonNext1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF65F82C22D1339B00437167 /* buttonNext1ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		1914E85E22C4FD8C00C98C16 /* sisakuyume2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sisakuyume2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1914E86222C4FD8C00C98C16 /* sisakuyume2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sisakuyume2UITests.swift; sourceTree = "<group>"; };
 		1914E86422C4FD8C00C98C16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF65F82622D1240900437167 /* 写真ライブラリ.photoslibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "写真ライブラリ.photoslibrary"; sourceTree = "<group>"; };
+		BF65F82822D124BA00437167 /* 猫.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "猫.jpg"; sourceTree = "<group>"; };
+		BF65F82A22D124EB00437167 /* 猫.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "猫.jpg"; path = "../../../../Downloads/猫.jpg"; sourceTree = "<group>"; };
+		BF65F82C22D1339B00437167 /* buttonNext1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonNext1ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 		1914E83622C4FD8B00C98C16 = {
 			isa = PBXGroup;
 			children = (
+				BF65F82C22D1339B00437167 /* buttonNext1ViewController.swift */,
 				1914E84122C4FD8B00C98C16 /* sisakuyume2 */,
 				1914E85622C4FD8C00C98C16 /* sisakuyume2Tests */,
 				1914E86122C4FD8C00C98C16 /* sisakuyume2UITests */,
@@ -97,9 +106,12 @@
 		1914E84122C4FD8B00C98C16 /* sisakuyume2 */ = {
 			isa = PBXGroup;
 			children = (
+				BF65F82A22D124EB00437167 /* 猫.jpg */,
 				1914E84222C4FD8B00C98C16 /* AppDelegate.swift */,
 				1914E84422C4FD8B00C98C16 /* ViewController.swift */,
 				1914E84622C4FD8B00C98C16 /* Main.storyboard */,
+				BF65F82622D1240900437167 /* 写真ライブラリ.photoslibrary */,
+				BF65F82822D124BA00437167 /* 猫.jpg */,
 				1914E84922C4FD8C00C98C16 /* Assets.xcassets */,
 				1914E84B22C4FD8C00C98C16 /* LaunchScreen.storyboard */,
 				1914E84E22C4FD8C00C98C16 /* Info.plist */,
@@ -229,7 +241,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF65F82922D124BA00437167 /* 猫.jpg in Resources */,
+				BF65F82722D1240900437167 /* 写真ライブラリ.photoslibrary in Resources */,
 				1914E84D22C4FD8C00C98C16 /* LaunchScreen.storyboard in Resources */,
+				BF65F82B22D124EB00437167 /* 猫.jpg in Resources */,
 				1914E84A22C4FD8C00C98C16 /* Assets.xcassets in Resources */,
 				1914E84822C4FD8B00C98C16 /* Main.storyboard in Resources */,
 			);
@@ -256,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF65F82D22D1339B00437167 /* buttonNext1ViewController.swift in Sources */,
 				1914E84522C4FD8B00C98C16 /* ViewController.swift in Sources */,
 				1914E84322C4FD8B00C98C16 /* AppDelegate.swift in Sources */,
 			);

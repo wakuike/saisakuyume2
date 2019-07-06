@@ -11,55 +11,6 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sisakuyume2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xa4-Xi-r8J">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9OC-6R-aRl">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1166"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="fnX-kk-J2S">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zYP-DZ-RN2">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
-                                                <color key="backgroundColor" red="1" green="0.73477063513359597" blue="0.67994062443092906" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZJQ-56-o3y">
-                                                <rect key="frame" x="0.0" y="200" width="414" height="50"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </view>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="fnX-kk-J2S" firstAttribute="top" secondItem="9OC-6R-aRl" secondAttribute="top" id="HHx-ey-29U"/>
-                                    <constraint firstItem="fnX-kk-J2S" firstAttribute="width" secondItem="9OC-6R-aRl" secondAttribute="width" id="NTS-fi-F39"/>
-                                    <constraint firstAttribute="bottom" secondItem="fnX-kk-J2S" secondAttribute="bottom" id="QoZ-38-Ocw"/>
-                                    <constraint firstAttribute="trailing" secondItem="fnX-kk-J2S" secondAttribute="trailing" id="YgD-00-MID"/>
-                                    <constraint firstItem="fnX-kk-J2S" firstAttribute="leading" secondItem="9OC-6R-aRl" secondAttribute="leading" id="igG-EK-ujq"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="9OC-6R-aRl" firstAttribute="trailing" secondItem="kGa-8R-E5I" secondAttribute="trailing" id="N15-1b-VBP"/>
-                            <constraint firstItem="9OC-6R-aRl" firstAttribute="bottom" secondItem="xa4-Xi-r8J" secondAttribute="bottom" id="O01-XG-rJn"/>
-                            <constraint firstItem="9OC-6R-aRl" firstAttribute="leading" secondItem="kGa-8R-E5I" secondAttribute="leading" id="QHu-ay-2IH"/>
-                            <constraint firstItem="9OC-6R-aRl" firstAttribute="top" secondItem="xa4-Xi-r8J" secondAttribute="top" id="iON-2B-W1P"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="kGa-8R-E5I"/>
-                    </view>
-                    <size key="freeformSize" width="414" height="1200"/>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="37.681159420289859" y="18.75"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="N7H-2M-3tK">
             <objects>
                 <viewController id="pFv-0X-P8H" sceneMemberID="viewController">
@@ -69,6 +20,16 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ygp-1J-fEG">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBC-Yh-TKf">
+                                        <rect key="frame" x="41" y="52" width="206" height="207"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="猫.jpg"/>
+                                        <connections>
+                                            <segue destination="kha-YB-DHt" kind="presentation" id="f4h-WM-C9j"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.53109938540000001" blue="0.57892732010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1200" id="wDE-SJ-9ca"/>
@@ -90,5 +51,23 @@
             </objects>
             <point key="canvasLocation" x="1234.7826086956522" y="-6.0267857142857144"/>
         </scene>
+        <!--Button Next1 View Controller-->
+        <scene sceneID="zve-N0-khg">
+            <objects>
+                <viewController id="kha-YB-DHt" customClass="buttonNext1ViewController" customModule="sisakuyume2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zQ2-Og-3Uc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.87848591324703973" green="1" blue="0.66981413478667817" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="dbl-TB-WX7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Jy-Oh-0bB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2174" y="-107"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="猫.jpg" width="640" height="400"/>
+    </resources>
 </document>
